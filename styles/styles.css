@@ -1,33 +1,33 @@
-main {
-    width: 800px;
-    margin: 0 auto;
-  }
-  
-  aside {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  main img { 
-    width: 150px;
-    height: auto;
-  }
-  
-  p {
-    padding: 0; 
-  }
-  
-  footer {
-    margin-top: 20px; 
-    border-top: 1px solid #ccc;
-    text-align: center;
-  }
+main { 
+  width: 800px; /* Sets a fixed width for the main content and centers it on the page. */
+  margin: 0 auto; 
+}
+
+aside {
+  width: 300px; /* Creates a smaller section for supplementary content, centered on the page. */
+  margin: 20px auto; 
+  border: 1px solid #ccc; /* Adds a border and padding to visually separate it from other sections. */
+  padding: 20px;
+  background-color: #f0f0f0; /* Gives a light gray background to distinguish it further. */
+  color: #333; /* Ensures text is easy to read with a dark gray color. */
+}
+
+aside img {
+  width: 200px; /* Makes images in the aside smaller for a compact design. */
+  height: auto;
+}
+
+main img { 
+  width: 150px; /* Keeps images within the main section smaller for consistent layout. */
+  height: auto;
+}
+
+p {
+  padding: 0; /* Removes extra space around paragraphs for a clean look. */
+}
+
+footer {
+  margin-top: 20px; /* Adds some space above the footer to separate it from other elements. */
+  border-top: 1px solid #ccc; /* Draws a line to visually mark the start of the footer. */
+  text-align: center; /* Centers the footer text for a neat presentation. */
+}
