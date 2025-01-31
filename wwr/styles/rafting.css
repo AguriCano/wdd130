@@ -1,5 +1,5 @@
 :root {
-    /* Define a set of reusable colors as custom properties for a cohesive color scheme. */
+     /* Define a set of reusable colors as custom properties for a cohesive color scheme. */
     --primary-color: #505033;
     --secondary-color: #264969;
     --accent-color: #cfcfb4;
@@ -11,32 +11,51 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    color: var(--primary-color);
+    background-color: var(--background-color);
 }
 
 header {
-    /* Creates a flexible and responsive layout with space between navigation elements and alignment. */
-    display: flex;
-    justify-content: space-between;
+    /* Creates a grid layout for the header, aligning the logo and navigation bar horizontally. */
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+header img {
+    /* Sets the height of the logo image in the header. */
+    height: 50px;
+}
+
+nav {
+    /* Uses Flexbox to align navigation links to the right. */
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
-    /* Styles navigation links to be clean, spaced, and use the primary theme color. */
+    /* Styles navigation links with spacing, no underline, and a white color. */
     margin: 0 15px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+     /* Changes link color on hover for better interactivity. */
+    color: var(--accent-color);
 }
 
 .hero {
-    /* Centers and positions the hero section for a bold and engaging visual. */
+    /* Positions the hero section relative for absolute positioning of child elements. */
     position: relative;
     text-align: center;
 }
 
 .hero-image {
     /* Ensures the hero image is responsive and fills the width of its container. */
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -44,51 +63,96 @@ nav a {
 h1 {
     /* Positions the main title over the hero image for a dramatic effect. */
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
-
-.client-image {
-    /* Floats an image to the right while adding space around it to avoid overlap with text. */
-    float: right;
-    margin-left: 15px;
-    width: 200px;
-    height: auto;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 article {
-    /* Positions articles cleanly and adds vertical spacing to separate sections. */
-    position: relative;
-    margin: 20px 0;
+    /* Positions the article section at the bottom left of the hero image. */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-article::after {
-    /* Clears any floating elements inside an article for proper layout alignment. */
-    content: "";
-    display: table;
-    clear: both;
+.client-image {
+     /* Floats the client image to the right with spacing. */
+
+    float: right;
+    margin-left: 15px;
+    width: 100px;
+    height: auto;
+}
+
+.history {
+     /* Styles the history section with padding, background, and rounded corners. */
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.adventures {
+    /* Styles the adventures section with padding, background, and rounded corners. */
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-images {
+    /* Creates a grid layout for the adventure images, ensuring consistency in size and spacing. */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.adventure-images figure {
+    /* Centers the content of each figure element. */
+    margin: 0;
+    text-align: center;
 }
 
 .adventure-images img {
-    /* Creates a grid-like layout for images, ensuring consistency in size and spacing. */
-    width: 18%;
-    margin: 1%;
-    float: left;
+    /* Ensures the adventure images are responsive and fill their containers. */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adventure-images figcaption {
+    /* Adds spacing and styling to the captions below the adventure images. */
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--primary-color);
 }
 
 footer {
-    /* Adds a themed background, centers content, and spaces text in the footer area. */
+    /* Styles the footer with a background color, padding, and centered content. */
+    display: flex;
+    justify-content: space-between;
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
+.social-media {
+    /* Aligns social media icons horizontally with spacing. */
+    display: flex;
+    gap: 10px;
+}
+
 .social-media img {
-    /* Styles icons for social media, making them small and well-spaced for a clean look. */
+    /* Sets the size of the social media icons. */
     width: 30px;
-    margin: 0 10px;
-    text-decoration: none;
+    height: auto;
 }
