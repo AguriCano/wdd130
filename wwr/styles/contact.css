@@ -117,6 +117,13 @@ nav a:hover {
     margin-bottom: 10px; /* Add space below the message purpose section */
 }
 
+.contact-form .message-purpose label {
+    margin-right: 10px; /* Add space between the radio button and the label */
+}
+
+.contact-form .message-purpose input[type="radio"] {
+    margin-right: 5px; /* Add space between the radio button and its label */
+}
 .contact-form button {
     background-color: var(--secondary-color);
     color: white;
