@@ -36,6 +36,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s; /* Agregar transición para el hover */
 }
 
 nav a:hover {
@@ -43,52 +44,48 @@ nav a:hover {
 }
 
 .contact-container {
-    display: flex; /* Use flexbox for the layout */
+    display: flex;
     padding: 20px;
+    gap: 20px; /* Usar gap para separación entre elementos */
 }
 
-.contact-info {
+.contact-info,
+.contact-form {
     background-color: white;
     border: 2px solid rgb(92, 87, 87);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-right: 20px; /* Add margin to the right for separation */
 }
 
 .contact-form {
-    background-color: white;
-    border: 2px solid rgb(92, 87, 87); /* Add black border to the form */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 600px; /* Adjusted width to align with employee profiles */
+    width: 600px; /* Mantener el ancho para alineación */
 }
 
 .employee-profiles {
-    padding: 20px; /* Add padding for the employee profiles section */
-    background-color: white; /* Background color for the section */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    margin: 20px; 
-    display: flex; 
-    flex-wrap: wrap; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 300px; 
-    align-items: center; 
+    height: 300px;
+    align-items: center;
 }
 
 .employee-profiles h2 {
-    text-align: center; /* Center the heading */
-    width: 100%; /* Ensure the heading takes the full width of the container */
-    margin-bottom: 20px; /* Add some space below the heading */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .employee-image {
-    width: 120px; /* Increase the size of the images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 80%; /* Keep rounded corners */
-    margin: 10px; /* Add margin around each image for spacing */
+    width: 120px;
+    height: auto;
+    border-radius: 50%; /* Cambiar a 50% para un círculo perfecto */
+    margin: 10px;
 }
 
 .contact-form label {
@@ -99,31 +96,28 @@ nav a:hover {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%; /* Ensure the input fields do not overflow */
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .contact-form input[type="radio"] {
-    margin-right: 5px; /* Add some space between the radio button and the label */
+    margin-right: 5px;
 }
 
 .contact-form .message-purpose {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center align items vertically */
-    margin-bottom: 10px; /* Add space below the message purpose section */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .contact-form .message-purpose label {
-    margin-right: 10px; /* Add space between the radio button and the label */
+    margin-right: 10px;
 }
 
-.contact-form .message-purpose input[type="radio"] {
-    margin-right: 5px; /* Add space between the radio button and its label */
-}
 .contact-form button {
     background-color: var(--secondary-color);
     color: white;
@@ -131,6 +125,7 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Agregar transición para el hover */
 }
 
 .contact-form button:hover {
