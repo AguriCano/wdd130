@@ -36,7 +36,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s; /* Agregar transición para el hover */
+    transition: color 0.3s; 
 }
 
 nav a:hover {
@@ -46,7 +46,7 @@ nav a:hover {
 .contact-container {
     display: flex;
     padding: 20px;
-    gap: 20px; /* Usar gap para separación entre elementos */
+    gap: 20px; 
 }
 
 .contact-info,
@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 .contact-form {
-    width: 600px; /* Mantener el ancho para alineación */
+    width: 600px; 
 }
 
 .employee-profiles {
@@ -84,7 +84,7 @@ nav a:hover {
 .employee-image {
     width: 120px;
     height: auto;
-    border-radius: 50%; /* Cambiar a 50% para un círculo perfecto */
+    border-radius: 50%; 
     margin: 10px;
 }
 
@@ -125,7 +125,7 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Agregar transición para el hover */
+    transition: background-color 0.3s; 
 }
 
 .contact-form button:hover {
